@@ -113,15 +113,15 @@ Os nomes de arquivos/diretórios ou extensões de arquivos listados no arquivo *
 
 	git log -p -2
 	
-##### Exibir resumo do histórico
+##### Exibir resumo do histórico (hash completa, autor, data, comentário e qtde de alterações (+/-))
 
 	git log --stat
 	
-##### Exibir informações resumidas em uma linha (por commit)
+##### Exibir informações resumidas em uma linha (hash completa e comentário)
 
 	git log --pretty=oneline
 	
-##### Exibir histórico com formatação específica
+##### Exibir histórico com formatação específica (hash abreviada, autor, data e comentário)
 
 	git log --pretty=format:"%h - %an, %ar : %s"
 	
@@ -131,6 +131,24 @@ Os nomes de arquivos/diretórios ou extensões de arquivos listados no arquivo *
 * %s: Comentário.
 
 Verifique as demais opções de formatação no [Git Book](http://git-scm.com/book/en/Git-Basics-Viewing-the-Commit-History)
+
+##### Exibir histório de um arquivo específico
+
+	git log -- <caminho_do_arquivo>
+
+##### Exibir histórico de um arquivo específico que contêm uma determinada palavra
+
+	git log --summary -S<palavra> [<caminho_do_arquivo>]
+
+##### Exibir histórico modificação de um arquivo
+
+	git log --diff-filter=M -- <caminho_do_arquivo>
+
+* O <D> pode ser substituido por: Adicionado (A), Copiado (C), Apagado (D), Modificado (M), Renomeado (R), entre outros.
+
+##### Exibir histório de um determinado autor
+
+	git log --author=usuario
 
 ##### Exibir revisão e autor da última modificação de uma bloco de linhas
 
