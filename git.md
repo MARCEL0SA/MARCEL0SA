@@ -103,7 +103,7 @@ Os nomes de arquivos/diretórios ou extensões de arquivos listados no arquivo *
 
 	git rm -r diretorio
 
-### Visualizar hitórico
+### Visualizar histórico
 
 ##### Exibir histórico
 	
