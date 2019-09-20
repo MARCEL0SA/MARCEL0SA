@@ -218,7 +218,7 @@ Os demais **pushes** não precisam dessa informação
 	
 ##### Buscar as alterações, mas não aplica-las no branch atual
 
-	git fecth
+	git fetch
 	
 ### Clonar um repositório remoto já existente
 
